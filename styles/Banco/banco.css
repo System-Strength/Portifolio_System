@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --black-nav: #0C0C0C;
+    --black-footer: #0f0f0f;
+    --black-main: #1F1F1F;
+    --white: #fff;
+    --orange-border: #F05122;
+    --orange-border-second: #F47B21; 
+}
+
+
+body{
+    background-color: var(--black-main);
+}
+
+.navigation{
+    z-index: 1000;
+    position: fixed;
+    width: 5rem;
+    height: 100%;
+    background-color: var(--black-nav);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation:hover, .navigation.active{
+    width: 250px;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+
+.navigation ul li:hover{
+    background: var(--orange-border-second);
+
+}
+
+.navigation ul #logo:hover{
+    background: var(--black-footer);
+}
+.navigation ul li a{
+    padding-top: 8px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+.navigation ul li a .logo{
+    justify-content: center;
+}
+
+.navigation ul li a .icon{   
+    display: block;
+    max-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon img{
+    margin-left: 1em;
+    width: 3em;
+}
+.title{
+    color: var(--white);
+    font: bold 11pt Inter;
+    padding-top: 8%;
+    padding-left: 1.5em;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-left: 6em;
+    margin-right: 10em;
+}
+
+.container{
+    background: var(--black-main);
+    padding: 25px;
+    margin-top: 4%;
+    border-radius: 30px;
+    width: 70rem;
+}
+
+.container > h2{
+    margin-left: 2em;
+    font: bold 3em Inter, 'sans-serif';
+    color: var(--white);
+    text-align: center;
+}
+.main{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+a .box{
+    justify-content: center;
+    text-align: center;
+    margin-top: 8em;
+    margin-left: 1rem;
+    padding-top: 5rem;
+    width: 22rem;
+    height: 25vh;
+    border: solid 5px var(--orange-border);
+    color: var(--white);
+    font: bold 12pt Inter, 'sans-serif';
+    cursor: pointer;
+    background: var(--black-nav);
+    filter: blur(70%);
+    transition: 0.8s;
+    
+}
+.box:hover{
+    background: var(--black-main);
+}
+
+.info > h3{
+    color: var(--white);
+    font: normal 16pt Inter, 'sans-serif';
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background: var(--black-footer);
+    padding: 25px;
+    width: 100%;   
+}
+
+footer p{
+    color: var(--white);
+    text-align: center;
+    font: italic 12pt Inter, 'sans-serif';
+}
+
+
+@media(max-width: 1080px){
+    html{
+       font-size: 90%; 
+    }
+    .main{
+        display: block;
+    }
+    .box{
+        margin-top: 10%;
+        margin-left: 22%;
+        border: solid 3px var(--orange-border);
+    }
+}
+
+@media(max-width: 720px){
+    html{
+       font-size: 60%; 
+    }
+    .main{
+        display: block;
+        margin-left: 7rem;
+    }
+    .box{
+        margin-top: 10%;
+        margin-left: 22%;
+        border: solid 3px var(--orange-border);
+    }
+}
