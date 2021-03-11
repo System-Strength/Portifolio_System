@@ -104,21 +104,58 @@ section{
 
 .content_main{
     display: flex;
-    background-color: red;
     justify-content: center;
 }
 
 a{
     text-decoration: none;
 }
-.box {
+.box{
+    text-align: center;
     justify-content: center;
-    display: flex;
+    padding-top: 2%;
+    margin: 3%;
     width: 26rem;
-    height: 25vh;
+    height: 65vh;
     border: solid 5px var(--orange-border);
     color: var(--white);
     font: bold 16pt Inter, 'sans-serif';
+    cursor: pointer;
+    background: var(--black-nav);
+    filter: blur(70%);
+    transition: 0.8s;
+}
+.main_one{
+    justify-content: center;
+    display: flex;
+    margin: 2em;
+}
+.main_two{
+    justify-content: center;
+    display: block;
+    margin: 2em;
+}
+.content_two{
+    margin-top: 1em;
+    width: 20rem;
+    height: 20vh;
+    border: solid 5px var(--orange-border-second);
+    color: var(--white);
+    padding-top: 20%;
+    font: bold 12pt Inter, 'sans-serif';
+    cursor: pointer;
+    background: var(--black-nav);
+    filter: blur(70%);
+    transition: 0.8s;
+}
+.content_one{
+    margin: 1em;
+    width: 10rem;
+    height: 35vh;
+    border: solid 5px var(--orange-border-second);
+    color: var(--white);
+    padding-top: 55%;
+    font: bold 12pt Inter, 'sans-serif';
     cursor: pointer;
     background: var(--black-nav);
     filter: blur(70%);
@@ -170,5 +207,40 @@ footer p{
         margin-top: 10%;
         margin-left: 22%;
         border: solid 3px var(--orange-border);
+    }
+    .content_main{
+        display: block;
+        justify-content: center;
+    }
+    .main_one{
+        justify-content: center;
+        display: flex;
+        margin: 2em;
+    }
+    .content_two{
+        margin-top: 1em;
+        width: 20rem;
+        height: 20vh;
+        border: solid 5px var(--orange-border-second);
+        color: var(--white);
+        padding-top: 8%;
+        font: bold 10pt Inter, 'sans-serif';
+        cursor: pointer;
+        background: var(--black-nav);
+        filter: blur(70%);
+        transition: 0.8s;
+    }
+    .content_one{
+        margin: 1em;
+        width: 10rem;
+        height: 35vh;
+        border: solid 5px var(--orange-border-second);
+        color: var(--white);
+        padding-top: 10%;
+        font: bold 10pt Inter, 'sans-serif';
+        cursor: pointer;
+        background: var(--black-nav);
+        filter: blur(70%);
+        transition: 0.8s;
     }
 }
