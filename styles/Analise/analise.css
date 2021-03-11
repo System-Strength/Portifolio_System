@@ -15,17 +15,7 @@
     --orange-border: #F05122;
     --orange-border-second: #F47B21; 
 }
-@media(max-width: 1080px){
-    html{
-       font-size: 90%; 
-    }
-}
 
-@media(max-width: 720px){
-    html{
-       font-size: 60%; 
-    }
-}
 
 body{
     background-color: var(--black-main);
@@ -56,7 +46,6 @@ body{
     background: var(--orange-border-second);
 
 }
-
 
 .navigation ul #logo:hover{
     background: var(--black-footer);
@@ -94,29 +83,49 @@ body{
 section{
     display: flex;
     justify-content: center;
-    margin-left: 14em;
+    margin-left: 6em;
     margin-right: 10em;
 }
 
 .container{
-    background: var(--white);
+    background: var(--black-main);
     padding: 25px;
-    margin-top: 6%;
+    margin-top: 4%;
     border-radius: 30px;
     width: 70rem;
 }
 
 .container > h2{
+    margin-left: 2em;
+    font: bold 3em Inter, 'sans-serif';
+    color: var(--white);
     text-align: center;
 }
 
-.info{
-    background: var(--black-main);
-    margin: 2rem;
-    padding: 25px;
-    border-radius: 30px;
+.main_one, .main_two{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+a .box{
+    text-align: center;
+    margin-top: 3em;
+    margin-left: 5rem;
+    padding-top: 5rem;
+    width: 26rem;
+    height: 25vh;
     border: solid 5px var(--orange-border);
-  
+    color: var(--white);
+    font: bold 12pt Inter, 'sans-serif';
+    cursor: pointer;
+    background: var(--black-nav);
+    filter: blur(70%);
+    transition: 0.8s;
+    
+}
+.box:hover{
+    background: var(--black-main);
 }
 
 .info > h3{
@@ -136,4 +145,33 @@ footer p{
     color: var(--white);
     text-align: center;
     font: italic 12pt Inter, 'sans-serif';
+}
+
+
+@media(max-width: 1080px){
+    html{
+       font-size: 90%; 
+    }
+    .main{
+        display: block;
+    }
+    .box{
+        margin-top: 10%;
+        margin-left: 22%;
+        border: solid 3px var(--orange-border);
+    }
+}
+
+@media(max-width: 720px){
+    html{
+       font-size: 60%; 
+    }
+    .main_one, .main_two{
+        display: block;
+    }
+    .box{
+        margin-top: 10%;
+        margin-left: 22%;
+        border: solid 3px var(--orange-border);
+    }
 }
