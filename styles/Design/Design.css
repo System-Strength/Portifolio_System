@@ -108,7 +108,8 @@ section{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #19dec1;
 }
 .box{
     text-align: center;
@@ -125,6 +126,7 @@ a{
     filter: blur(70%);
     transition: 0.8s;
 }
+
 .main_one{
     justify-content: center;
     display: flex;
@@ -163,6 +165,7 @@ a{
 }
 .content_one:hover, .content_two:hover{
     background: var(--black-main);
+    font-size: 12.5pt;
 }
 
 .info > h3{

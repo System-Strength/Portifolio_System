@@ -106,7 +106,8 @@ section{
     display: flex;
 }
 a{
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #19dec1;
 }
 a .box{
     text-align: center;
@@ -126,6 +127,7 @@ a .box{
 }
 .box:hover{
     background: var(--black-main);
+    font-size: 14pt;
 }
 
 .info > h3{
