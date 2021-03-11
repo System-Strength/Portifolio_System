@@ -161,6 +161,9 @@ a{
     filter: blur(70%);
     transition: 0.8s;
 }
+.content_one:hover, .content_two:hover{
+    background: var(--black-main);
+}
 
 .info > h3{
     color: var(--white);
